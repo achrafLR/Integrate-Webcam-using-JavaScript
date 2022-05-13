@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> How to Integrate Webcam using JavaScript </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+    <main>
+        <div class="webcam">
+            <div class="video-outer" data-aos="fade-up-left">
+                <video id="video" autoplay></video>
+            </div>
+            <div class="webcam-start-stop" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <a href="#!" class="btn-start" onclick="start()">Start</a>
+                <a href="#!" class="btn-stop" onclick="StopWebCam()">Stop</a>
+            </div>
+        </div>
+
+        <div class="bg-design-1"></div>
+        <div class="bg-design-2"></div>
+    </main>
+
+
+    <script src="app.js" async defer></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
+
+
+</head>
